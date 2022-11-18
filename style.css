@@ -1,0 +1,278 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Sono', sans-serif;
+	scroll-behavior: smooth;
+
+}
+
+body {
+	background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(./images/background.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #0F0101;
+}
+
+#mestart {
+	color: white;
+}
+
+nav ul li {
+	list-style-type: none;
+	display: inline-block;
+	padding: 5px 5px;
+}
+
+nav ul li a {
+	color: white;
+}
+
+nav ul li a:hover {
+	color: #ff0000;
+	transition: .3s;
+}
+
+
+#glow {
+    width: 40px;
+    height: 40px;
+/*    border: none;
+    outline: none;
+    color: white;*/
+    background: ghostwhite;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+
+#glow:before {
+    content: '';
+    background: linear-gradient(45deg,#CD8764, #ff0000, #ff7300, #A0532C,#EAB53B,#FCCB58, #ff0000, #CD8764);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+/*#glow:active {
+    color: #000
+}*/
+
+#glow:active:after {
+    background: transparent;
+}
+
+#glow:hover:before {
+    opacity: 1;
+}
+
+#glow:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #AB0C0C;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
+
+
+
+main {
+	text-align: center;
+}
+span {
+	color: #ff0000;
+}
+
+#greeting	{
+	color: white;
+	padding-top: 7rem;
+}
+
+#docket {
+	color: white;
+	padding-top: 2rem;
+	padding-bottom: 1rem;
+}
+
+
+#aboutme {
+	color: whitesmoke;
+	padding: 3rem;
+	margin-bottom: 3rem;
+}
+
+#aboutme-intro {
+	text-align: justify;
+  	text-justify: inter-word;
+}
+
+#photo {
+	background: none;
+	display: flex;
+  	justify-content: center;
+  	border-radius: 10px;
+}
+
+#work-experience {
+	color: #ff0000;
+	padding-top: 1rem;
+	margin-top: 3rem;
+	margin-bottom: 5rem;
+}
+
+#work-title {
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+}
+
+#workone {
+	color: #ff0000;
+}
+
+#work-description {
+	color: white;
+}
+
+#tools {
+	padding: 1rem;
+	color: #ff0000;
+}
+
+#toolone {
+	border-radius: 20px;
+	background: #000315;
+}
+
+h5 {
+	color: floralwhite;
+}
+
+.contactform {
+	color: #ff0000;
+	padding-top: 2rem;
+	margin-bottom: 3rem;
+}
+
+#contactform {
+	background: #000315;
+	margin-bottom: 5rem;
+	border-radius: 20px;
+}
+
+/*------------------CONTACT ME BUTTON---------------*/
+.glow-on-hover {
+    width: 150px;
+    height: 40px;
+    border: none;
+    outline: none;
+    color: white;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg,#CD8764, #ff0000, #ff7300, #A0532C,#EAB53B,#FCCB58, #ff0000, #CD8764);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+/*------------------CONTACT ME BUTTON END----------------*/
+
+
+
+
+
+
+
+
+
+footer {
+	padding: 0.7rem;
+	text-align: center;
+}
+
+.social-icon {
+	text-decoration: none;
+}	
+
+footer span {
+	margin-right: 0.5rem;
+	margin-left: 0.5rem;
+}
+
+
+
+
